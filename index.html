@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Pezzuol</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <div>
+            <h1 class="titulo_header">Carlos Pezzuol</h1>
+        </div>
+
+        <div class="a_nav">
+            <a href="#sectionho" class="a_cabecalho">Home</a>
+            <a href="#sectionse" class="a_cabecalho">Sobre mim</a>
+            <a href="#sectionpo" class="a_cabecalho">Projetos</a>
+            <a href="#sectioncon" class="a_cabecalho">Contato</a>
+        </div>
+    </header>
+
+   <section class="section_primaria" id="sectionho">
+        <div class="div_primaria">
+            <h2 class="titulo_body">Prazer, eu sou Carlos Pezzuol</h2>
+            
+            <div class="p_teste">a<p id="textoDinamico" class="palavras"></p></div>
+
+            <p class="p_body">eu sou um desenvolvedor web apaixonado e dedicado, e busco constantemente
+                 aprimorar minhas habilidades. Meu interesse em programação surgiu no ensino medio e desde
+                 então venho me dedicando a aprofundar meu conhecimento na área</p>
+        </div>
+
+        <img src="assets/foto_corpon.png" alt="foto minha" class="img_eu">
+   </section>
+
+   <section class="section_secundaria" id="sectionse">
+
+     <h3 class="titulo_tres">Sobre <span class="cor-diferente">Mim</span></h3>
+     <div class="imagem-circulo">
+        <img src="assets/foto_roston.png" alt="Minha Imagem">
+        <canvas id="canvas"></canvas>
+     </div>
+
+     <p class="p_dois">Cursando SI (Sistema da Informação), na Universidade Mogi das Cruzes (UMC).<br><br>Possuo foco em desenvolvimento Front end. tenho conhecimento em = Html | CSS3 | JavaScript | SQL | React | 
+        Uso a plataforma da Alura para estudar diversas coisas e aprimorar meus conhecimentos na área, vejo vídeos e podcats.<br><br>Me considero ágil, consistente em aprender outra linguagem e me adaptar a qualquer mudança, sou muito comunicativo amo trabalhar em equipe, pronto para novos desafios !<br><br>Se pudesse me definir em 3 palavras, certamente seriam : Otimista, perseverante e esforçado ! </p>
+
+   </section>
+
+   <section class="section_tercearia" id="sectionpo">
+        <h4 class="titulo_quarto">Meus <span class="cor-diferente">projetos</span></h4>
+        <p class="p_imagens">Confira algumas de minhas <span class="cor-diferente">telas</span></p>
+       
+        <div class="slider">
+
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+
+                <div class="slide first">
+                    <img src="assets/projeto1_foto.PNG" alt="imagem 1">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/projeto1_fotodois.PNG" alt="imagem 2">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/projeto2_foto.PNG" alt="imagem 3">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/projeto2_fotodois.PNG" alt="imagem 4">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/projeto2_fototres.PNG" alt="imagem 5">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/projeto2_fotoquatro.PNG" alt="imagem 6">
+                </div>
+
+                <div class="navegation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                </div>  
+
+            </div>
+
+            <div class="manual-navegation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+   </section>
+
+
+   <section class="section_quarta" id="sectioncon"> 
+        <h5 class="titulo_quinto">Entre em <span class="cor-diferente">contato</span></h5>
+
+        <form action="https://formspree.io/f/https://formspree.io/f/xrgnzooz" method="POST"></form>
+            <div class="contato">
+                <div class="inputs_esquerda">
+                    <input type="text" name="nome" id="texto1" placeholder="Nome Completo">
+                    <input type="text" name="telefone" id="texto1" placeholder="Informe seu Telefone">
+                </div>
+
+                <div class="inputs_direita">
+                    <input type="email" name="email" id="texto1" placeholder="Informe seu E-mail">
+                    <input type="text" name="assunto" id="texto1" placeholder="Assunto">
+                </div>
+
+                <div class="inputs">
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreve sua mensgaem"></textarea>
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+
+            </div>
+
+        </form>
+
+   </section>
+   
+   <script src="main.js"></script>
+</body>
+</html>

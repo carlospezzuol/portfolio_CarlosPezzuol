@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+:root {
+    --cor-primaria: #1C1C1C;
+    --cor-secundaira: #000080;
+    --cor-terciaria: #363636;
+}
+
+/* !!!!!!style do header!!!!!!! */
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Adicione um valor de z-index para garantir que o header esteja acima de outros elementos */
+    
+}
+
+.titulo_header {
+    padding: 20px 0 0 100px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.a_nav {
+    display: flex;
+    gap: 25px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.a_cabecalho {
+    text-decoration: none;
+    color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.a_cabecalho:hover {
+    transform: scale(1.3);
+    color: green;
+}
+
+    /*!!!!!style body!!!!!*/
+
+
+
+.titulo_body {
+    color: white;
+    font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.section_primaria {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 100px;
+    align-items: center; /* Centraliza no eixo vertical */
+    position: relative;
+    background-color: var(--cor-primaria);
+  
+}
+
+.div_primaria {
+    flex: 1;
+    margin-bottom: 20px;
+    
+}
+
+.p_body {
+    font-size: 16px; 
+    line-height: 1.4; 
+    max-width: 600px; 
+    text-align: justify; 
+    color: white;
+    font-family: 'Rethink Sans', sans-serif;
+    
+  }
+   
+.p_teste {
+    color: transparent;
+    height: 100px;
+    margin: 0;
+}
+
+.palavras {
+    color: transparent;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    
+    
+}
+
+.img_eu {
+    max-width: 60%; 
+    position: relative;
+    top: -1px; 
+}
+
+
+.section_secundaria {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo_tres {
+  font-size: 38px;
+  color: white;
+  padding-top: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cor-diferente {
+    color: green;
+}
+
+.imagem-circulo {
+    width: 150px; /* Tamanho da imagem */
+    height: 150px; /* Tamanho da imagem */
+    border-radius: 50%; /* Bordas circulares para criar um círculo */
+    border: 2px solid white; /* Borda de 2 pixels sólidos, você pode ajustar conforme necessário */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a borda circular */
+    margin-top: 15px; /* Espaçamento superior entre o título e a imagem */
+}
+
+.imagem-circulo img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o círculo */
+    height: 100%; /* Ajusta a altura da imagem para preencher o círculo */
+    object-fit: cover; /* Mantém a proporção da imagem e a corta conforme necessário */
+}
+
+.p_dois{
+    padding-top: 20px;
+    max-width: 400px; /* Define a largura máxima do parágrafo */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    color: white;
+    font-family: 'Rethink Sans', sans-serif;
+    padding-bottom: 20px;
+  }
+
+.section_tercearia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--cor-primaria);
+}
+
+.titulo_quarto {
+    padding-top: 10px;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+ }
+
+ .carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+ }
+
+ .slider {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+ }
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex; 
+
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navegation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+} 
+
+#radio5:checked ~ .first{
+    margin-left: -100% ;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -125% ;
+}
+
+.navegation-auto div {
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: green;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: green;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: green;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: green;
+}
+
+#radio5:checked ~ .navegation-auto .auto-btn5{
+    background-color: green;
+}
+
+#radio6:checked ~ .navegation-auto .auto-btn6{
+    background-color: green;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.p_imagens {
+    color: white;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 18px;
+}
+
+.titulo_quinto {
+    text-align: center;
+    color: white;
+    font-family: 'Rethink Sans', sans-serif;
+    padding-top: 10px;
+    font-size: 32px;
+
+}
+
+.section_quarta {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contato {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.inputs_esquerda input,
+.inputs_direita input,
+.inputs textarea,
+.inputs input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    border: 3px solid green;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.inputs_esquerda input,
+.inputs input,
+.inputs_direita input {
+    height: 35px;
+}
+
+.inputs textarea {
+    resize: vertical; 
+}
+
+.inputs input[type="submit"] {
+    display: inline-block;
+    
+}
+
+.inputs input::placeholder,
+.inputs textarea::placeholder {
+    color: #999; 
+    font-style: italic; 
+}
+
+.inputs_esquerda:hover input {
+   transition: border-color 0.3s;
+    
+}
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input:focus::placeholder, input:not(:placeholder-shown)::placeholder {
+    top: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.enviar {
+    color: white;
+}
+
